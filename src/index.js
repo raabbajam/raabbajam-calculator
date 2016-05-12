@@ -1,5 +1,6 @@
-export default function() {
-  return true;
+export default calculate;
+export function calculate(text) {
+  return evaluate(RPNize(tokenize(text)));
 }
 
 export function tokenize(text) {
@@ -16,6 +17,7 @@ export function tokenize(text) {
       number = null;
     }
   });
+  tokens.push(number);
   return tokens;
 }
 

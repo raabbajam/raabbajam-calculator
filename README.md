@@ -40,15 +40,18 @@ Calculate infix expression of number and operator
 ## Install
 
 ```sh
-npm i -D raabbajam-calculator
+npm i -S raabbajam-calculator
 ```
 
 ## Usage
 
 ```js
-import raabbajamCalculator from "raabbajam-calculator"
+import calculate from 'raabbajam-calculator';
 
-raabbajamCalculator() // true
+const text = '5 + ((1 + 2) * 4) - 3';
+const result = calculate(text);
+const expectedResult = 14;
+assert.equal(result, expectedResult, 'return result');
 ```
 
 ## License

@@ -55,5 +55,8 @@
     "tap-spec": "*",
     "tape": "*",
     "watch": "*"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
