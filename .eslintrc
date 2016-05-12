@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "extends": "raabbajam",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+  }
+}
